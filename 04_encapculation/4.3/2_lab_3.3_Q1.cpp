@@ -1,11 +1,7 @@
-
-
 #include <iostream>
 using namespace std;
-
-class Companies
+class company
 {
-
 private:
     int comp_id;
     string comp_name;
@@ -16,7 +12,7 @@ private:
     string comp_ceo;
 
 public:
-    Companies(int id, string name, int staff_quantity, double revenue, int import_raw_diamonds, int export_diamonds, string ceo)
+    company(int id, string name, int staff_quantity, double revenue, int import_raw_diamonds, int export_diamonds, string ceo)
     {
 
         comp_id = id;
@@ -27,30 +23,27 @@ public:
         comp_export_diamonds = export_diamonds;
         comp_ceo = ceo;
     }
-
     void Display()
     {
-        cout << "========== Companies Detail ===========" << endl;
+        cout << "========== company Detail ===========" << endl;
 
-        cout << "Companies ID                  :" << comp_id << endl;
-        cout << "Companies Name                :" << comp_name << endl;
-        cout << "Companies Staff Quantity      :" << comp_staff_quantity << endl;
-        cout << "Companies Revenue             :" << comp_revenue << endl;
-        cout << "Companies Import Raw Diamonds :" << comp_import_raw_diamonds << endl;
-        cout << "Companies Export Diamonds     :" << comp_export_diamonds << endl;
-        cout << "Companies Ceo                 :" << comp_ceo << endl;
+        cout << "company ID                  :" << comp_id << endl;
+        cout << "company Name                :" << comp_name << endl;
+        cout << "company Staff Quantity      :" << comp_staff_quantity << endl;
+        cout << "company Revenue             :" << comp_revenue << endl;
+        cout << "company Import Raw Diamonds :" << comp_import_raw_diamonds << endl;
+        cout << "company Export Diamonds     :" << comp_export_diamonds << endl;
+        cout << "company Ceo                 :" << comp_ceo << endl;
     }
-
-    ~Companies()
+    ~company()
     {
         cout << "company object\n";
     }
 };
-
 int main()
 {
 
-    cout << "Enter Companies Details:";
+    cout << "Enter company Details:";
 
     int n;
     cin >> n;
@@ -62,34 +55,34 @@ int main()
         string name, ceo;
         double revenue;
 
-        cout << "Companies " << i + 1 << " detail" << endl;
-        cout << "Enter Companies ID:" << endl;
+        cout << "company " << i + 1 << " detail" << endl;
+        cout << "Enter company ID:" << endl;
         cin >> id;
         cin.ignore();
 
-        cout << "Enter  Companies Name:" << endl;
+        cout << "Enter  company Name:" << endl;
         getline(cin, name);
 
-        cout << "Enter Companies Staff Quantity:" << endl;
+        cout << "Enter company Staff Quantity:" << endl;
         cin >> staff_quantity;
         cin.ignore();
 
-        cout << "Enter Companies Revenue:" << endl;
+        cout << "Enter company Revenue:" << endl;
         cin >> revenue;
         cin.ignore();
 
-        cout << "Enter Companies Import Raw Diamonds:" << endl;
+        cout << "Enter company Import Raw Diamonds:" << endl;
         cin >> import_raw_diamonds;
         cin.ignore();
 
-        cout << "Enter Companies Export Diamonds:" << endl;
+        cout << "Enter company Export Diamonds:" << endl;
         cin >> export_diamonds;
         cin.ignore();
 
-        cout << "Enter Companies Ceo:" << endl;
+        cout << "Enter company Ceo:" << endl;
         getline(cin, ceo);
 
-        Companies object(id, name, staff_quantity, revenue, import_raw_diamonds, export_diamonds, ceo);
+        company object(id, name, staff_quantity, revenue, import_raw_diamonds, export_diamonds, ceo);
 
         object.Display();
     }

@@ -1,10 +1,7 @@
-
 #include <iostream>
 using namespace std;
-
 class Cafe
 {
-
 private:
     int cafe_id;
     string cafe_name;
@@ -17,8 +14,7 @@ private:
 public:
     Cafe()
     {
-
-        cafe_id = 0;
+    cafe_id = 0;
         cafe_name = "no set";
         cafe_type = "no set";
         cafe_rating = 0;
@@ -29,7 +25,6 @@ public:
 
     void SetCafe()
     {
-
         cout << "\n===== Cafe Detail =====" << endl;
         cout << "Enter cafe id:" << endl;
         cin >> cafe_id;
@@ -59,7 +54,6 @@ public:
 
     void GetCafe()
     {
-
         cout << "\n===== Cafe Detail =====" << endl;
         cout << "Cafe ID               :" << cafe_id << endl;
 
@@ -75,7 +69,6 @@ public:
 
         cout << "Cafe Staff Quantity   :" << cafe_staff_quantity << endl;
     }
-
     ~Cafe()
     {
         // cout << "Object Destroyed\n";
