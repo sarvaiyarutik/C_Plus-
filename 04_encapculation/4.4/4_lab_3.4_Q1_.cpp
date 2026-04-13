@@ -146,7 +146,7 @@ int main()
 // #include <vector>
 
 // class Student
-// {
+// {            
 
 // private:
 //     string name;
