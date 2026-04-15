@@ -12,7 +12,7 @@ public:
     void SetName1()
     {
 
-        cout << "Enter Your name 1: ";
+        cout << "Enter Your name 20: ";
         cin >> name1;
     }
 
@@ -33,7 +33,7 @@ public:
     void SetName2()
     {
 
-        cout << "Enter Your Name 2: ";
+        cout << "Enter Your Name : ";
         cin >> name2;
     }
 
@@ -54,7 +54,7 @@ public:
     void SetName3()
     {
 
-        cout << "Enter Your Name 3: ";
+        cout << "Enter Your Name : ";
         cin >> name3;
     }
 
