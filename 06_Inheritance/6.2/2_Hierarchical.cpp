@@ -2,42 +2,44 @@
 #include <iostream>
 using namespace std;
 
-class Parent
+class Child1
 {
 
 public:
-    string task = " esy to end";
+    string task1 = "Gaming Task ";
 
-    void show()
+    void call1()
     {
-        cout << "parent class" << task << endl;
+
+        cout << "Creat a " << task1 << endl;
     }
 };
 
-class child1 : public Parent
+class child2 : public Child1
 {
 
 public:
-    string task = " esy to end";
+    string task2 = "Surat";
 
-    void show()
+    void call2()
     {
-        cout << "Child1 class" << task << endl;
+
+        cout << "I am going to " << task2 << endl;
     }
 };
 
-class child2 : public Parent
+class Result : public Child1
 {
 };
 
 int main()
 {
 
-    child1 c1;
+    Child1 c1;
     child2 c2;
 
-    c1.show();
-    c2.show();
+    c1.call1();
+    c2.call2();
 
     return 0;
 }

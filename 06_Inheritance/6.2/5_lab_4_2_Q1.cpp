@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -10,7 +11,13 @@ protected:
 public:
     void GetROI()
     {
-        cout << "Rate of interest " << rate << "%" << endl;
+        cout << "Rate of Inheritance " << rate << " %" << endl;
+    }
+
+    RBI()
+    {
+  
+        rate = 9.00;
     }
 };
 
@@ -18,43 +25,44 @@ class SBI : public RBI
 {
 
 public:
-    SBI(){
-        rate = 6.5;
+    SBI()
+    {
+        rate = 10.00;
     }
 };
 
-class BOB:public RBI{
+class BOB : public RBI
+{
 
-    public :
+public:
+    BOB()
+    {
 
-    BOB(){
-            rate = 7.0;
+        rate = 11.00;
     }
 };
 
-class ICICI :public RBI{
+class ICICI : public RBI
+{
 
-    public:
-    ICICI(){
-        rate = 7.5;
+public:
+    ICICI()
+    {
+        rate = 12.00;
     }
-
 };
-
 
 int main()
 {
+
+    RBI r;
     SBI s;
     BOB b;
     ICICI i;
 
-    cout<<"SBI   -> ";
+    r.GetROI();
     s.GetROI();
-
-    cout<<"BOB   -> ";
     b.GetROI();
-
-    cout<<"ICICI -> ";
     i.GetROI();
 
     return 0;

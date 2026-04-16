@@ -8,7 +8,7 @@ public:
     void Cooking()
     {
 
-        cout << "Cooking from Mother" << endl;
+        cout << "My mother cooking " << endl;
     }
 };
 
@@ -18,21 +18,22 @@ class Father
     public:
     void Driving()
     {
-
-        cout << "Father Driving Car" << endl;
+        cout << "My father driving a car" << endl;
     }
 };
 
-class child : public Mother, public Father
-{
+class Child : public Mother, public Father{
+
 };
 
-int main()
-{
-    child obj;
 
-    obj.Cooking();
-    obj.Driving();
+int  main()
+{
+    Child c;
+
+    c.Cooking();
+    c.Driving();
+
 
     return 0;
 }
